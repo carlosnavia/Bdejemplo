@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingBottom="16dp">
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/despliegue" android:scaleType="fitCenter"/>
+        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/perfil_cocinero" android:scaleType="fitCenter" android:layout_marginStart="8dp"/>
+        <ImageView android:layout_width="100dp" android:layout_height="50dp" android:src="@drawable/cocinarte" android:scaleType="fitCenter" android:layout_marginStart="8dp" android:layout_weight="1"/>
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/filtro" android:scaleType="fitCenter"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etCodigo"
+        android:hint="Codigo de Receta"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etNombre"
+        android:hint="Nombre de Receta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:hint="Descripción"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnInsertar"
+        android:text="Insertar Receta"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:text="Actualizar Receta"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:text="Eliminar Receta"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/listViewCiudades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
